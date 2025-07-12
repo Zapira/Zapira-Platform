@@ -1,4 +1,6 @@
 import HeroBg from '../../assets/Hero.png';
+import Navbar from '../../components/Shared/Navbar';
+import Hero from './Sections/Hero';
 
 export default function Home() {
     return (
@@ -9,22 +11,9 @@ export default function Home() {
                 style={{ backgroundImage: `url(${HeroBg})` }}
             >
                 {/* Navbar */}
-                <nav className="px-8 py-4">
-                    <ul className="flex space-x-4">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <Navbar />
 
-                {/* Hero Content */}
-                <div className="h-[60vh] flex items-center justify-center px-8">
-                    <div className="text-center">
-                        <h1 className="text-4xl font-bold mb-4">Selamat Datang di Zapira</h1>
-                        <p className="text-lg">Solusi WhatsApp Blasting Gratis dan Efisien</p>
-                    </div>
-                </div>
+                <Hero></Hero>
             </section>
 
             {/* Konten Lain */}
